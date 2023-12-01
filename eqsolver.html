@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equation Solver</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="eqsolver.css">
+</head>
+<body style="background-color: #151515;">
+    <div class="container">
+        <h2 style="color: #c0c0c0;" class="text-center" ><u>Find unique solution to any multivariable linear equations (upto 9 variables).</u></h2>
+        <div class="row">
+            <div class="col-4">
+                <div class="dropdown">
+                    <button class="btn btn-outline-primary" style="margin-top: 10px;" id="NOV" data-bs-toggle="dropdown">
+                        Select the no. of variables.
+                        &nbsp;
+                        &dArr;
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><button class="dropdown-item" onclick="display(1)">1</button></li>
+                        <li><button class="dropdown-item" onclick="display(2)">2</button></li>
+                        <li><button class="dropdown-item" onclick="display(3)">3</button></li>
+                        <li><button class="dropdown-item" onclick="display(4)">4</button></li>
+                        <li><button class="dropdown-item" onclick="display(5)">5</button></li>
+                        <li><button class="dropdown-item" onclick="display(6)">6</button></li>
+                        <li><button class="dropdown-item" onclick="display(7)">7</button></li>
+                        <li><button class="dropdown-item" onclick="display(8)">8</button></li>
+                        <li><button class="dropdown-item" onclick="display(9)">9</button></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-4">
+                <button class="btn btn-secondary solvebtn" id="solve" onclick="takeinput(crnt_n)" disabled>Solve</button>
+            </div>
+            <div class="col-4">
+                <a href="./index.html" role="button" style="margin-top: 10px;" class="btn btn-outline-primary">Calculator</a>
+                <a href="./mardet.html" role="button" style="margin-top: 10px;" class="btn btn-outline-primary">Matrix Determinant</a>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="eqs">
+
+    </div>
+    <script src="eqsolver1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

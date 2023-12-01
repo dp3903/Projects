@@ -1,0 +1,63 @@
+.eq{
+    margin-top: 10px;
+    background-color: #353535;
+    padding: 6px;
+    border-radius: 8px;
+    color: aliceblue;
+    opacity: 0.8;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4.9px);
+    -webkit-backdrop-filter: blur(4.9px);
+    /* box-shadow: 3px 4px 4px #404040; */
+}
+.eq:nth-child(2n){
+    background-color: #252525;
+}
+.solvebtn{
+    margin-top: 10px;
+    /* margin-left: 50%; */
+    transition: all 0.5s;
+}
+.solvebtn:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.dropdown-menu{
+    background-color: #252525;
+    border-radius: 12px;
+    /* border-top: solid 10px #353535; */
+    box-shadow: 2px 3px 8px #101010;
+    margin-top: 10px !important;
+    margin-left: 60px !important;
+}
+.dropdown-item{
+    color: aliceblue !important;
+
+}
+.dropdown-item:hover{
+    /* color: #454545; */
+    background-color: #353535;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input{
+    transition: all 0.5s;
+    color: aliceblue!important;
+    border-radius: 8px!important;
+    border: hidden !important;
+    background-color: #505050!important;
+}
+input:hover{
+    transform: scale(1.01);
+    transition: all 0.5s;
+    background-color: #909090!important;
+}
+.eq:nth-child(2n) input{
+    background-color: #404040 !important;
+}
+.eq:nth-child(2n) input:hover{
+    background-color: #707070 !important;
+}
